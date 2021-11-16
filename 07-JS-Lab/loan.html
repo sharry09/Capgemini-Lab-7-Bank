@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07 Lab</title>
+    <style>
+        body{
+            background-image: url(images/b2.webp);
+            background-repeat: no-repeat;
+            background-size: contain;
+            color:black;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            padding :200px 200px;
+            margin-left: 50px;
+        }
+        [type="text"]{
+            margin-top: 10px;
+            padding: 20px 20px;
+        }
+        [type="button"]{
+            color: black;
+            margin-top:30px;
+            padding: 20px 20px;
+            font-family: monospace;
+            font-size: 30px;
+           
+        }
+        label{
+            margin-top: 10px;
+            font-family: monospace;
+            font-size: 30px;
+        }
+        p{
+            font-size: 50px;
+            margin-top: 5px;
+        }
+        #result{
+            font-size: 50px;
+        }
+        #pay{
+            margin-top: 150px;
+        }
+    </style>
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <form id="myForm"  action="">
+        <p>ICICEE BANK</p>
+        <h1>LOAN INFO</h1>
+        
+        <label for="amount">Amount of Loan</label>
+        <input type="text" id="amount" placeholder="loan amount in lakhs">
+        <label for="roi">Rate of Interest</label>
+        <input type="text" id="roi" placeholder="interest percentage">
+        <label for="years">Repayment period</label>
+        <input type="text" id="years" placeholder="in years">
+        <input type="button" value="Compute" onclick="compute()">
+
+
+        <h1 id="pay">PAYMENT INFO</h1>
+
+    </form>
+</body>
+</html>
